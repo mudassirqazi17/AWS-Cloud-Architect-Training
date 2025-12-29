@@ -1,0 +1,24 @@
+Validate with Consumers
+
+⬅ Structured:
+
+docker exec -it kafka-1 kafka-console-consumer \
+  --topic structured-topic \
+  --from-beginning \
+  --bootstrap-server 172.31.27.216:19092
+
+
+⬅ Semi-structured:
+
+docker exec -it kafka-1 kafka-console-consumer \
+  --topic semi-structured-topic \
+  --from-beginning \
+  --bootstrap-server 172.31.27.216:19092
+
+
+⬅ Unstructured:
+
+docker exec -it kafka-1 kafka-console-consumer \
+  --topic unstructured-topic \
+  --from-beginning \
+  --bootstrap-server 172.31.27.216:19092
