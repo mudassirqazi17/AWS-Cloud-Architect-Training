@@ -46,3 +46,18 @@ docker exec -it kafka-1 kafka-console-consumer \
   --topic unstructured-topic \
   --from-beginning \
   --bootstrap-server 172.31.27.216:19092
+
+
+---
+aws configure
+
+REGION="ap-south-1"
+
+aws s3 mb s3://structured-data-172-31-20-80 --region $REGION
+aws s3 mb s3://semi-structured-data-172-31-20-80 --region $REGION
+aws s3 mb s3://unstructured-data-172-31-20-80 --region $REGION
+
+aws s3 ls
+pip3 install kafka-python boto3
+
+
