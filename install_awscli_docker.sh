@@ -71,7 +71,7 @@ docker --version
 
 echo "➡ Testing Docker installation..."
 docker run hello-world || true
-
+sudo apt install python3-pip
 echo "============================================"
 echo " ✅ Installation Completed Successfully!"
 echo " 🔁 Please log out and log back in OR reboot"
