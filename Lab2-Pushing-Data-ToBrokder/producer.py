@@ -7,7 +7,7 @@ import base64
 BASE_DIR = "/home/ubuntu/generated_data"
 
 producer = KafkaProducer(
-    bootstrap_servers=["172.31.27.216:19092"],
+    bootstrap_servers=["172.31.20.80:19092"],
     value_serializer=lambda v: json.dumps(v).encode("utf-8")
 )
 
