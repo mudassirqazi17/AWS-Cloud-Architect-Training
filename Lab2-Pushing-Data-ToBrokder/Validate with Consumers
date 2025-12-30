@@ -1,3 +1,24 @@
+Create Topics in Kafka
+
+docker exec -it kafka-1 kafka-topics --create \
+  --topic structured-topic \
+  --bootstrap-server kafka-1:9092 \
+  --partitions 3 \
+  --replication-factor 3
+
+docker exec -it kafka-1 kafka-topics --create \
+  --topic semi-structured-topic \
+  --bootstrap-server kafka-1:9092 \
+  --partitions 3 \
+  --replication-factor 3
+
+docker exec -it kafka-1 kafka-topics --create \
+  --topic unstructured-topic \
+  --bootstrap-server kafka-1:9092 \
+  --partitions 3 \
+  --replication-factor 3
+
+
 Validate with Consumers
 
 ⬅ Structured:
